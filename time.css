@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding:0
+}
+section{
+    background-image: url(forest1.jpeg);
+    background-size: cover;
+    width: 100%;
+    height:100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+h3{
+    color: rgb(235, 230, 226);
+    font-size:25px;
+    text-align: center;
+    padding:15px;
+    font-family: 'Rhodium Libre', 'Times New Roman', Times, serif 
+   
+}
+#php-time{
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: -20px;
+    position:relative;
+    top:-45px;
+    font-family: 'Rokkitt', Arial, Helvetica, sans-serif;
+}
+
+.head{
+    text-align: center;
+    color: #fcfcfc;
+    font-size: 100px;
+}
+.img1, .img2, .img3{
+    width: 100%;
+    height: 650px;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+}
+.img1{
+    animation: snowfall 12s infinite linear;
+    background: url(snow1.png);
+    background-repeat: repeat;
+
+}
+.img2{
+    background: url(snow2.png);
+    background-repeat: repeat;
+    animation: snowfall2 10s infinite linear;
+   
+}
+.img3{
+    background: url(snow3.png);
+    background-repeat: repeat;
+    animation: snowfall3 10s infinite linear;
+}
+@keyframes snowfall {
+    0%{
+        background-position: 0px 0px
+    }
+    100%{
+        background-position: 100px 650px
+    }
+}
+@keyframes snowfall2 {
+    0%{
+        background-position: 0px -100px
+    }
+    10%{
+        background-position: 0px 65 0px
+    }
+}
+@keyframes snowfall3 {
+    0%{
+        background-position: 0px 100px
+    }
+    10%{
+        background-position: 300px 65 0px
+    }
+}
+.time{
+    width: 40%;
+    height: 200px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    opacity: .7;
+    filter: alpha(opacity=70); /* IE */
+    -moz-opacity: 0.7; /*firefox*/
+ 
+}
